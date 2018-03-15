@@ -4,7 +4,7 @@ title:      "Python Decorator01"
 subtitle:   "关于装饰器"
 date:       2018-03-15
 author:     "leehp258"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/home-bg.jpg"
 tags:
     - Python
     - Decorator

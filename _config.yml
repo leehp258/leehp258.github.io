@@ -5,14 +5,14 @@ header-img: img/home-bg.jpg
 email: leehp258@gmail.com
 description: ""
 keyword: ""
-url: "https://leehp258.github.io/"              # your host, for absolute URL
+url: "leehp258.github.io"              # your host, for absolute URL
 baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     leehp258
+# weibo_username:     leehp258
 zhihu_username:     leehp258
 github_username:    leehp258
 #twitter_username:  huxpro
