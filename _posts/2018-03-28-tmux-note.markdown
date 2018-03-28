@@ -77,6 +77,7 @@ ctrl+b n/p/数字键 # 切换窗口
 ctrl+b x # 删除窗口
 ctrl+b , # 重命名窗口
 ctrl+b s # 以列表方式显示所有窗口
+
 # 分屏
 ctrl+b " # 横向分屏
 ctrl+b % # 纵向分屏
@@ -160,7 +161,7 @@ x   关闭当前面板
 !   将当前面板置于新窗口；即新建一个窗口，其中仅包含当前面板
 Ctrl+方向键    以1个单元格为单位移动边缘以调整当前面板大小
 Alt+方向键 以5个单元格为单位移动边缘以调整当前面板大小
-Space   在预置的面板布局中循环切换；依次包括even-horizontal、even-vertical、main-horizontal、main-vertical、tiled
+Space   循环切换预置面板布局(even-horizontal、even-vertical、main-horizontal、main-vertical、tiled)
 q   显示面板编号
 o   在当前窗口中选择下一面板
 方向键 移动光标以选择面板
