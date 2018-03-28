@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "tmux 备忘"
+subtitle:   "Terminal Multiplexer 终端多路复用"
+date:       2018-03-28
+author:     "leehp258"
+header-img: "img/home-bg.jpg"
+tags:
+    - tmux
+    - ubuntu
+    - 工具软件
+---
+
 # What is tmux?
 
 tmux = terminal multiplexer 终端多路复用器
