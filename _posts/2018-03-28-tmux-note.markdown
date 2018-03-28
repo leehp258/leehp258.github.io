@@ -4,7 +4,7 @@ title:      "tmux 备忘"
 subtitle:   "Terminal Multiplexer 终端多路复用"
 date:       2018-03-28
 author:     "leehp258"
-header-img: "img/tmux_demo.png"
+header-img: "img/tmux_demo.jpg"
 tags:
     - tmux
     - ubuntu
@@ -79,8 +79,8 @@ ctrl+b , # 重命名窗口
 ctrl+b s # 以列表方式显示所有窗口
 
 # 分屏
-ctrl+b " # 横向分屏
-ctrl+b % # 纵向分屏
+ctrl+b " # 横向分屏"
+ctrl+b % # 纵向分屏 
 ctrl+b o/方向键/q # 分屏间切换，q数字消失前快速按对应的数切换
 ctrl+b z # 分屏最大化/还原 (tmux>=1.8)
 
