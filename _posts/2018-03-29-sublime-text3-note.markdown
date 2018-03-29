@@ -24,7 +24,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 **通过Package Control安装插件的方法：**
 `Ctrl+Shift+P`调出命令窗口，输入`Install Package`并回车，等待`Loading repositories`然后在列表中搜索要安装的插件
 
-# 安装Soda SolarizedDark主题和自定义常用配置
+# 安装SolarizedDark主题和自定义常用配置
 1. 安装插件：
 - Soda SolarizedDark Theme
 - A-File-Icon: 文件图标
