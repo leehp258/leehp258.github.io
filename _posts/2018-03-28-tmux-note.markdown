@@ -76,7 +76,7 @@ ctrl+b c # 创建新窗口
 ctrl+b n/p/数字键 # 切换窗口
 ctrl+b x # 删除窗口
 ctrl+b , # 重命名窗口
-ctrl+b s # 以列表方式显示所有窗口
+ctrl+b w # 以列表方式显示所有窗口
 
 # 分屏
 ctrl+b " # 横向分屏"
