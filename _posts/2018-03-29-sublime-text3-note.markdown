@@ -4,7 +4,7 @@ title:      "Sublime Text 3 备忘"
 subtitle:   "神级文本和代码编辑器"
 date:       2018-03-29
 author:     "leehp258"
-header-img: "img/home-bg.jpg"
+header-img: "img/sublime_theme.jpg"
 tags:
     - sublime
     - editor
