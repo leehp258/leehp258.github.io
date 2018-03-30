@@ -94,7 +94,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 通过SublimeREPL运行Python
 先安装，然后`Tools->SublimeREPL->Python`就可以看到效果了
 设置快捷键: `Preferences->Key Bindings-User`，就可以用快捷键调出`python shell`或者执行当前python文件了
-```json
+```shell
 [
     {"keys":["ctrl+shift+c"],
         "caption": "SublimeREPL: Python",
@@ -114,7 +114,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 修改其中的cmd值为相应的解释器路径
 
 Jedi - Python autocompletion 智能补全插件
-```json
+```shell
 # 快捷键
 "goto": "ctrl+shift+g"
 "find_usages": "alt+shift+f"
