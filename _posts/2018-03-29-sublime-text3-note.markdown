@@ -164,7 +164,7 @@ Alignment 等号对齐
 ```
 3. 删除重复行 `ctrl+h`，替换为
 ```
-`\1\n`
+\1\n
 ```
 点 `Replace All`
 > 参考：https://segmentfault.com/a/1190000009318179
