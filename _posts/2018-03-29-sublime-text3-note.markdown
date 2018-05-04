@@ -155,4 +155,16 @@ AutoPep8
 Alignment 等号对齐
 按Ctrl+Alt+A，可以是凌乱的代码以等号为准左右对其，适合有代码洁癖的朋友。
 
+# 查找和删除重复行
+
+1. 先排序 `Edit > Sort Lines` or `F9`
+2. 查找重复行 `ctrl+f` 在正则模式下查找：
+```
+^(.+)$[\r\n]*(^\1$[\r\n]*)+
+```
+3. 删除重复行 `ctrl+h`，替换为
+```
+`\1\n`
+```
+点 `Replace All`
 > 参考：https://segmentfault.com/a/1190000009318179
