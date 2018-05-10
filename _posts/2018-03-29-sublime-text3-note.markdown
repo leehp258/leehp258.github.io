@@ -162,6 +162,8 @@ SideBarEnhancements 侧边栏增强插件
 
 
 # 常用快捷键
+
+```
 Ctrl+Shift+P 打开命令面板
 Ctrl+P 搜索项目中的文件 或 输入`:@#`，分别相当于 Ctrl+G, Ctrl+R, Ctrl+：
 Ctrl+G 输入数字，跳转到该行
@@ -208,6 +210,7 @@ Ctrl+T 左右字母互换。
 Ctrl+K+B 开启/关闭侧边栏
 F11：全屏
 Shift+F11：全屏免打扰模式，只编辑当前文件
+```
 
 # 查找和删除重复行
 
