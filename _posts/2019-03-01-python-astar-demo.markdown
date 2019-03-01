@@ -15,10 +15,10 @@ tags:
 
 > 源自一次技术分享，废话不多说，先看效果三连拍
 
-![](img/astar_demo1.png) ![](img/astar_demo2.png) ![](img/astar_demo3.png)
+![astar_demo1.png](img/astar_demo1.png) ![astar_demo2.png](img/astar_demo2.png) ![astar_demo3.png](img/astar_demo3.png)
 
 ## 直接上代码
-```
+```python
 # -*- coding: utf-8 -*-
 
 import sys
