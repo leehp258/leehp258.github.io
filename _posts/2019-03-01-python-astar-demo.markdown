@@ -15,7 +15,12 @@ tags:
 
 > 源自一次技术分享，废话不多说，先看效果三连拍
 
-![astar_demo1.png](https://leehp258.github.io/img/astar_demo1.png) ![astar_demo2.png](https://leehp258.github.io/img/astar_demo1.png) ![astar_demo3.png](https://leehp258.github.io/img/astar_demo1.png)
+
+<figure>
+    <img src="https://leehp258.github.io/img/astar_demo1.png">
+    <img src="https://leehp258.github.io/img/astar_demo2.png">
+    <img src="https://leehp258.github.io/img/astar_demo3.png">
+</figure> 
 
 ## 直接上代码
 ```python
