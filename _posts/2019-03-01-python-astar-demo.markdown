@@ -26,6 +26,7 @@ import math
 import time
 import random
 import curses
+from heapq import heappush, heappop
 
 __author__ = "leehp258"
 
@@ -75,12 +76,12 @@ class AStar():
         return abs(x2 - x1)+abs(y2 - y1)
 
     def reverse_path(self, last):
-        def _gen():
-            current = last
-            while current:
-                yield current.point
-                current = current.prev
-        return reversed(list(_gen()))
+        path = []
+        curr = last
+        while curr:
+            path.append(curr.point)
+            curr = curr.prev
+        return reversed(path)
 
     def get_neighbors(self, node):
         x, y = node.point
@@ -94,12 +95,17 @@ class AStar():
     def __call__(self, start, goal):
         if start == goal:
             return [start]
-        start_node = ANode(start, 0, self.estimate(start, goal))
+        start_node = self.nodes[start]
+        start_node.g = 0
+        start_node.f = self.estimate(start, goal)
 
         open_set = set([start_node])
+        # open_set = []
+        # heappush(open_set, start_node)
         while open_set:
             curr_node = min(open_set)
             open_set.remove(curr_node)
+            # curr_node = heappop(open_set)
             if curr_node.point == goal:
                 return self.reverse_path(curr_node)
             curr_node.closed = True
@@ -107,13 +113,19 @@ class AStar():
                 if neighbor_node.closed:
                     continue
                 g = curr_node.g + 1
-                if neighbor_node.g <= g:
-                    continue
-                neighbor_node.prev = curr_node
-                neighbor_node.g = g
-                neighbor_node.f = g + self.estimate(neighbor_node.point, goal)
-                if neighbor_node not in open_set:
+                f = g + self.estimate(neighbor_node.point, goal)
+                if neighbor_node in open_set:
+                    if f < neighbor_node.f:
+                        neighbor_node.prev = curr_node
+                        neighbor_node.g = g
+                        neighbor_node.f = f
+                else:
+                    neighbor_node.prev = curr_node
+                    neighbor_node.g = g
+                    neighbor_node.f = f
                     open_set.add(neighbor_node)
+                    # heappush(open_set, neighbor_node)
+
 
 class AMap():
     def __init__(self):
@@ -146,6 +158,13 @@ class AMap():
         self.range_x(10, [9,10,15])
         self.range_x(16, [1,2,15,16])
 
+    def demo5(self):
+        self.range_xy(1, 10, 9)
+
+    def range_xy(self, x, y, stop):
+        for i in range(0, stop):
+            self.grid[y-i][x+i] = HILL
+
     def range_y(self, y, gaps=[0]):
         for i in range(GRID):
             self.grid[i][y] = HILL
@@ -176,6 +195,7 @@ _map = AMap()
 # _map.demo2()
 # _map.demo3()
 # _map.demo4()
+_map.demo5()
 _map.demo_ramdom()
 
 a = AStar(_map.grid)
@@ -190,13 +210,11 @@ def grid2str(grid):
 
 render = path_render(_map.grid, path)
 def loop(window):
-    i = 0
     for frame in render:
         window.addstr(0, 0, grid2str(frame))
         window.refresh()
-        i+=1
-        time.sleep(0.5)
-    time.sleep(30)
+        time.sleep(0.2)
+    time.sleep(2)
 curses.wrapper(loop)
 
 ```
