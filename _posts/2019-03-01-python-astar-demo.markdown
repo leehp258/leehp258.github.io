@@ -160,6 +160,13 @@ class AMap():
 
     def demo5(self):
         self.range_xy(1, 10, 9)
+        
+    def demo6(self):
+        self.range_x(4, [10, 11, 12, 13, 14, 15, 16, 17, 18, 19])
+        self.range_y(10, [0, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])
+        self.range_x(10, [0, 1, 2, 3])
+        self.range_x(13, [16, 17, 18, 19])
+        self.range_x(16, [0, 1, 2, 3])
 
     def range_xy(self, x, y, stop):
         for i in range(0, stop):
@@ -195,6 +202,7 @@ _map = AMap()
 # _map.demo2()
 # _map.demo3()
 # _map.demo4()
+# _map.demo6()
 _map.demo5()
 _map.demo_ramdom()
 
